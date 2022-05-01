@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="welcome_screen_padding">16dp</dimen>
+    <dimen name="welcome_screen_card_view_radius">10dp</dimen>
+    <dimen name="welcome_screen_card_view_height">264dp</dimen>
+    <dimen name="welcome_screen_tabs_top_margin">24dp</dimen>
+    <dimen name="welcome_screen_button_margin">16dp</dimen>
+    <dimen name="welcome_screen_tab_horizontal_margin">16dp</dimen>
+    <dimen name="lists_screen_button_diameter">56dp</dimen>
+    <dimen name="lists_screen_appbar_padding">0dp</dimen>
+    <dimen name="lists_screen_appbar_rounded">0dp</dimen>
+    <dimen name="lists_screen_appbar_fab_margin">8dp</dimen>
+    <dimen name="character_list_divider_start_margin">80dp</dimen>
+    <dimen name="location_list_divider_start_margin">0dp</dimen>
+    <dimen name="episode_list_divider_start_margin">16dp</dimen>
+    <dimen name="list_fragment_bottom_padding">74dp</dimen>
+    <dimen name="items_text_margin_end">8dp</dimen>
+    <dimen name="item_character_image_size">40dp</dimen>
+    <dimen name="item_character_status_indicator_size">4dp</dimen>
+    <dimen name="item_character_start_margin">16dp</dimen>
+    <dimen name="circle_image_view_corner">20dp</dimen>
+    <dimen name="rounded_image_view_corner">12dp</dimen>
+    <dimen name="start_offset_swipe_refresher">30dp</dimen>
+    <dimen name="end_offset_swipe_refresher">100dp</dimen>
+    <dimen name="similar_card_offset">8dp</dimen>
+
+    <dimen name="items_base_text_sp">16sp</dimen>
+    <dimen name="items_small_text_sp">10sp</dimen>
+    <dimen name="timer_digits_text_sp">80sp</dimen>
+</resources>

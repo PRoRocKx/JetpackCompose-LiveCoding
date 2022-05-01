@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="24dp"
+    android:paddingEnd="0dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageCharacter"
+        android:layout_width="@dimen/item_character_image_size"
+        android:layout_height="@dimen/item_character_image_size"
+        android:contentDescription="@string/characterPhotoDescription"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/circleImageView" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="@dimen/item_character_start_margin"
+        android:textColor="@color/black"
+        android:textSize="@dimen/items_base_text_sp"
+        app:layout_constraintEnd_toStartOf="@+id/favoriteIcon"
+        app:layout_constraintStart_toEndOf="@+id/imageCharacter"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Rick Sanchez" />
+
+    <ImageView
+        android:id="@+id/statusPoint"
+        android:layout_width="@dimen/item_character_status_indicator_size"
+        android:layout_height="@dimen/item_character_status_indicator_size"
+        android:layout_marginStart="@dimen/item_character_start_margin"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/statusIconDescription"
+        android:src="@drawable/full_circle"
+        app:layout_constraintStart_toEndOf="@+id/imageCharacter"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <TextView
+        android:id="@+id/statusDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/favoriteIcon"
+        app:layout_constraintStart_toEndOf="@+id/statusPoint"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        android:paddingBottom="14dp"
+        tools:text="Alive" />
+
+    <ImageView
+        android:id="@+id/favoriteIcon"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:contentDescription="@string/favoriteIconDescription"
+        android:scaleType="center"
+        android:src="@drawable/not_favorite_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

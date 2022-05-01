@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <TextView
+            android:id="@+id/codeDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/charactersInEpisodeHeader"
+            android:textSize="@dimen/items_small_text_sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SmallSp"
+            tools:text="SEASON 1, EPISODE 06" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/codeDetails"
+            tools:text="Something Ricked This Way Comes" />
+
+        <TextView
+            android:id="@+id/favoriteDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="8dp"
+            app:drawableStartCompat="@drawable/not_favorite_icon"
+            android:drawablePadding="6dp"
+            android:text="@string/addToFavs"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name" />
+
+        <TextView
+            android:id="@+id/dateKey"
+            style="@style/characterDetailsPairs"
+            android:layout_marginTop="24dp"
+            android:text="@string/dateKey"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/favoriteDescription" />
+
+        <TextView
+            android:id="@+id/dateValue"
+            style="@style/characterDetailsPairs.Values"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toEndOf="@+id/dateKey"
+            app:layout_constraintTop_toBottomOf="@+id/favoriteDescription"
+            tools:text="25.10.2018" />
+
+        <TextView
+            android:id="@+id/codeKey"
+            style="@style/characterDetailsPairs"
+            android:layout_marginTop="12dp"
+            android:text="@string/codeKey"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dateKey" />
+
+        <TextView
+            android:id="@+id/codeValue"
+            style="@style/characterDetailsPairs.Values"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toEndOf="@id/codeKey"
+            app:layout_constraintTop_toBottomOf="@+id/dateValue"
+            tools:text="S01E06" />
+
+        <TextView
+            android:id="@+id/characterInEpisodeHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="@string/charactersInEpisodeHeader"
+            android:textSize="@dimen/items_small_text_sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/codeValue"
+            tools:ignore="SmallSp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:overScrollMode="never"
+            android:paddingBottom="@dimen/list_fragment_bottom_padding"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintTop_toBottomOf="@+id/characterInEpisodeHeader"
+            tools:listitem="@layout/item_character_arrow" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

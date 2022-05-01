@@ -1,0 +1,61 @@
+<resources>
+    <string name="appName">Rick And Morty</string>
+    <string name="buttonSkip">Skip</string>
+    <string name="welcomeImageDescription">welcome image</string>
+    <string name="characters">Characters</string>
+    <string name="characterCard">Character Card</string>
+    <string name="locations">Locations</string>
+    <string name="locationCard">Location Card</string>
+    <string name="favorites">Favorites</string>
+    <string name="statistics">Statistics</string>
+    <string name="episodes">Episodes</string>
+    <string name="episodeCard">Episode Card</string>
+    <string name="map">Map</string>
+    <string name="clickBackToExitMessage">Click again to exit</string>
+    <string name="emptyTab">page indicator</string>
+    <string name="numberEpisode">SEASON %1$s, EPISODE %2$s</string>
+    <string name="characterPhotoDescription">photo of the character</string>
+    <string name="favoriteIconDescription">this indicator means that the element is liked</string>
+    <string name="statusIconDescription">status indicator of character</string>
+    <string name="searchTitle">Search</string>
+    <string name="notFound">Not found</string>
+    <string name="addToFavs">Add to Favorites</string>
+    <string name="statusKey">Status:</string>
+    <string name="typeKey">Type:</string>
+    <string name="genderKey">Gender:</string>
+    <string name="dateKey">Date:</string>
+    <string name="codeKey">Code:</string>
+    <string name="episodesHeader">EPISODES</string>
+    <string name="charactersInLocationHeader">CHARACTERS IN LOCATION</string>
+    <string name="charactersInEpisodeHeader">CHARACTERS IN EPISODE</string>
+    <string name="similarCharactersHeader">SIMILAR CHARACTERS</string>
+    <string name="dimensionKey">Dimension:</string>
+    <string name="snackBarText">Item has been removed from Favs</string>
+    <string name="snackBarActionText">Cancel</string>
+    <string name="timerHeader">In App Time</string>
+    <string name="mapsButton">Open maps</string>
+    <string name="doubleZero">00</string>
+    <string name="resetTimeButton">Reset time</string>
+    <string name="resetDialogMessage">Do you want to reset time?</string>
+    <string name="permissionDialogMessage">
+        The permission to track your geolocation will allow us to keep statistics on the launch of
+        this application. Do you want to allow this?
+    </string>
+    <string name="permissionDialogAnswer">
+        If you change your mind, allow permission in the app settings.
+    </string>
+    <string name="permissionPositiveAnswer">Settings</string>
+    <string name="permissionNegativeAnswer">No, thanks</string>
+    <string name="resetPositiveAnswer">Да</string>
+    <string name="resetNegativeAnswer">Нет</string>
+    <array name="notificationMessages">
+        <item>Рик и Морти ждут твоей помощи</item>
+        <item>Хватит сквончить!</item>
+        <item>Параллельные миры ждут тебя, го</item>
+        <item>Ты просто вялая кучка беспорядочно собранных молекул</item>
+        <item>Знаете, ведь так мы и умираем. В одиночестве.</item>
+        <item>Вселенная настолько велика, что ничего на свете не имеет значения!</item>
+        <item>Своими мозгами думайте, не будьте тупым стадом.</item>
+    </array>
+    <string name="notificationNameChannel">Inviting notifications</string>
+</resources>

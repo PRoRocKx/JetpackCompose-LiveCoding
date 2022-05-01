@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="24dp"
+    android:paddingTop="10dp"
+    android:paddingEnd="22dp"
+    android:paddingBottom="12dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageCharacter"
+        android:layout_width="@dimen/item_character_image_size"
+        android:layout_height="@dimen/item_character_image_size"
+        android:layout_marginTop="2dp"
+        android:contentDescription="@string/characterPhotoDescription"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/name"
+        app:shapeAppearanceOverlay="@style/circleImageView" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/item_character_start_margin"
+        android:layout_marginEnd="@dimen/items_text_margin_end"
+        android:textColor="@color/black"
+        android:textSize="@dimen/items_base_text_sp"
+        app:layout_constraintEnd_toStartOf="@+id/upIcon"
+        app:layout_constraintStart_toEndOf="@+id/imageCharacter"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Rick Sanchez" />
+
+    <ImageView
+        android:id="@+id/statusPoint"
+        android:layout_width="@dimen/item_character_status_indicator_size"
+        android:layout_height="@dimen/item_character_status_indicator_size"
+        android:layout_marginStart="@dimen/item_character_start_margin"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/statusIconDescription"
+        android:src="@drawable/full_circle"
+        app:layout_constraintStart_toEndOf="@+id/imageCharacter"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <TextView
+        android:id="@+id/statusDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="@dimen/items_text_margin_end"
+        app:layout_constraintEnd_toStartOf="@+id/upIcon"
+        app:layout_constraintStart_toEndOf="@+id/statusPoint"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        tools:text="Alive" />
+
+    <ImageView
+        android:id="@+id/upIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rotation="180"
+        android:src="@drawable/up"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/blue"
+        tools:ignore="ContentDescription" />
+</androidx.constraintlayout.widget.ConstraintLayout>
